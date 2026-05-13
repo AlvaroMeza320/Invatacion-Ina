@@ -1,0 +1,115 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#f5f5f5;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding:20px;
+  overflow-x:hidden;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.invitacion{
+  position:relative;
+  width:100%;
+  max-width:500px;
+}
+
+/* IMAGEN */
+.invitacion img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   CUADRO INVISIBLE MAPA
+========================= */
+.mapa{
+  position:absolute;
+
+  /* MÁS ABAJO */
+  top:45%;
+
+  left:71%;
+
+  width:38%;
+  height:9%;
+
+  transform:translate(-50%, -50%);
+
+  background:transparent;
+  cursor:pointer;
+}
+
+/* =========================
+   CUADRO INVISIBLE WHATSAPP
+========================= */
+.whatsapp{
+  position:absolute;
+
+  /* NUEVA POSICIÓN */
+  top:59.5%;
+  left:50%;
+
+  /* NUEVO TAMAÑO */
+  width:52%;
+  height:9%;
+
+  transform:translate(-50%, -50%);
+
+  background:transparent;
+  cursor:pointer;
+}
+
+/* =========================
+   TABLETS
+========================= */
+@media screen and (max-width:768px){
+
+  .invitacion{
+    max-width:430px;
+  }
+
+}
+
+/* =========================
+   CELULARES
+========================= */
+@media screen and (max-width:480px){
+
+  body{
+    padding:10px;
+  }
+
+  .invitacion{
+    max-width:100%;
+  }
+
+}
+
+/* =========================
+   CELULARES PEQUEÑOS
+========================= */
+@media screen and (max-width:360px){
+
+  .mapa{
+    width:40%;
+    height:10%;
+  }
+
+  .whatsapp{
+    width:55%;
+    height:10%;
+  }
+
+}
